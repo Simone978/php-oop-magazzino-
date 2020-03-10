@@ -19,6 +19,14 @@ class Birra
   public function scontoBirra(){
     return $this->prezzo - $this->sconto;
   }
+  public function alcolLevel()
+  {
+    if($this->alcol > 3){
+      return $this->quantitAlcol = "elevata quantità di alcol";
+    }else{
+      return $this->quantitAlcol = "quantità di alcol moderata";
+    }
+  }
 }
 
 
