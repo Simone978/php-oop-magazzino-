@@ -1,7 +1,12 @@
 <?php
 
+require_once(__DIR__.'/trait/spesespedizioni.php');
+
+
+
 class Birra
 {
+  use SpeseSpedizioni;
   public $codice;
   public $tipo;
   public $marca;
