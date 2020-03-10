@@ -6,12 +6,18 @@ $finkbrau = new Birra('22345','bionda','finkbrau');
   $finkbrau->cl = 66;
   $finkbrau->alcol = 5;
   $finkbrau->prezzo = 39.9;
+  $finkbrau->sconto = 15;
+  $finkbrau->scontoBirra();
+  $finkbrau->alcolLevel();
   var_dump($finkbrau);
 
 $heineken = new Birra('33542','bionda','heineken');
   $heineken->cl = 33;
   $heineken->alcol = '4,9%';
   $heineken->prezzo = 60;
+  $heineken->sconto = 10;
+  $heineken->scontoBirra();
+  $heineken->alcolLevel();
   var_dump($heineken);
 
 $peroni = new Birra('99786','bionda','peroni');
@@ -31,6 +37,7 @@ $Ale = new Artigianale('33454','bionda','Ale');
   $Ale->provenienza = 'Avola (SR)';
   $Ale->sconto = 20;
   $Ale->scontoBirra();
+  $Ale->alcolLevel();
   var_dump($Ale);
 
 $Gladiatore = new Artigianale('44645','nera','Coffee Stout');
@@ -39,5 +46,8 @@ $Gladiatore = new Artigianale('44645','nera','Coffee Stout');
   $Gladiatore->prezzo = 3.50;
   $Gladiatore->aroma = 'caffè';
   $Gladiatore->provenienza = 'Roma';
+  $Gladiatore->alcolLevel();
+  $Gladiatore->sconto = 30;
+  $Gladiatore->scontoBirra();
   $Gladiatore->alcolLevel();
   var_dump($Gladiatore);
