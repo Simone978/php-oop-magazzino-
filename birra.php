@@ -8,6 +8,7 @@ class Birra
   public $cl;
   public $alcol;
   public $prezzo;
+  public $sconto;
 
   function __construct($_codice, $_tipo, $_marca)
   {
@@ -15,4 +16,14 @@ class Birra
     $this->tipo = $_tipo;
     $this->marca = $_marca;
   }
+  public function scontoBirra(){
+    return $this->prezzo - $this->sconto;
+  }
+}
+
+
+class Artigianale extends birra
+{
+  public $aroma;
+  public $provenienza;
 }
