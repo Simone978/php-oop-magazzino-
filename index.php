@@ -18,6 +18,8 @@ $peroni = new Birra('99786','bionda','peroni');
   $peroni->cl = 66;
   $peroni->alcol = 2;
   $peroni->prezzo = 90;
+  $peroni->sconto = 20;
+  $peroni->scontoBirra();
   $peroni->alcolLevel();
   var_dump($peroni);
 
@@ -27,7 +29,7 @@ $Ale = new Artigianale('33454','bionda','Ale');
   $Ale->prezzo = 7.00;
   $Ale->aroma = 'miele';
   $Ale->provenienza = 'Avola (SR)';
-  $Ale->sconto = 3;
+  $Ale->sconto = 20;
   $Ale->scontoBirra();
   var_dump($Ale);
 

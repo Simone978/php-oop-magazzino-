@@ -14,6 +14,7 @@ class Birra
   public $alcol;
   public $prezzo;
   public $sconto;
+  public $prezzoScontato;
 
   function __construct($_codice, $_tipo, $_marca)
   {
@@ -22,7 +23,8 @@ class Birra
     $this->marca = $_marca;
   }
   public function scontoBirra(){
-    return $this->prezzo - $this->sconto;
+    $this->prezzoScontato = $this->prezzo - $this->prezzo * $this->sconto / 100;
+    return $this->prezzoScontato;
   }
   public function alcolLevel()
   {
